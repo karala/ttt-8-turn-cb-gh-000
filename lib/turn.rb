@@ -37,6 +37,6 @@ def turn(board)
   if board[index] && valid_move?(board, index)
     return true
   else
-    return false
+    turn(board)
   end
 end
